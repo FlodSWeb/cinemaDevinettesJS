@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Quizz Cinema</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Quizz cinema</h1>
+      <div class="data-container">
+          <div class="btn" id="dataBtn">Display DATA</div>
+      
+      <p id="dataPara">const movie1 = {
+        title: "Forrest Gump",
+        year: "1991",
+        director: "Robert Zemeckis",
+        genre: ["Drama", "Romance", "Comedy"],
+        actors: ["Tom Hanks", "Robin Wright", "Gary Sinise", "Mykelti Williamson"],
+        boxOffice: "679,835,137$",
+        synopsis:
+          "The presidencies of Kennedy and Johnson, the Vietnam War, the Watergate scandal and other historical events unfold from the perspective of an Alabama man with an IQ of 75, whose only desire is to be reunited with his childhood sweetheart.",
+      };
+      
+      const movie2 = {
+        title: "The Green Mile",
+        year: "2000",
+        director: "Frank Darabont",
+        genre: ["Drama", "Mystery", "Fantasy"],
+        actors: ["Michael Clarke Duncan", "Tom Hanks", "David Morse", "Sam Rockwell"],
+        boxOffice: "290,701,374$",
+        synopsis:
+          "Paul Edgecomb, the head of the block guards during the 1930's at the Cold Mountain Correctional Facility. Through his many years of watching men live and die Paul's faith and sanity has deteriorated. He is assigned to watch over John Coffey, a giant man convicted of murdering two little girls. But John acts more like a child than a cold hearted murderer. Edgecomb and other guards find themselves in a moral dilemma when they witness John accomplish healing miracles.",
+      };
+      
+      const movie3 = {
+        title: "Fight Club",
+        year: "1999",
+        director: "David Fincher",
+        genre: ["Action", "Drama", "Thriller"],
+        actors: ["Edward Norton", "Brad Pitt", "Helena Bonham Carter", "Jared Leto"],
+        boxOffice: "100,820,947$",
+        synopsis: "The first rule of fight club is you don't talk about fight club.",
+      };
+      
+      const movie4 = {
+        title: "Hancock",
+        year: "2008",
+        director: "Peter Berg",
+        genre: ["Action", "Drama", "Super-Hero", "Comedy"],
+        actors: ["Will Smith", "Charlize Theron", "Jason Bateman"],
+        boxOffice: "624,234,272$",
+        synopsis:
+          "John Hancock (Will Smith) is a drunkard with superhuman powers, including supersonic flight, invulnerability, immortality, and super-strength. Although he uses his powers to rescue people and stop criminals, his activities inadvertently cause millions of dollars in property damage due to his constant intoxication and cynical attitude...",
+      };
+      
+      const movie5 = {
+        title: "Match Point",
+        year: "2005",
+        director: "Woody Allen",
+        genre: ["Romance", "Drama", "Criminal", "Thriller"],
+        actors: ["Jonathan Rhys-Meyers", "Scarlett Johansson", "Emily Mortimer"],
+        boxOffice: "87,950,928$",
+        synopsis:
+          "Chris Wilton, a recently retired tennis professional, is taken on as an instructor at an upmarket club in London. He strikes up a friendship with a wealthy pupil, Tom Hewett, after discovering their common affinity for opera. Tom's older sister, Chloe, is smitten with Chris and the two begin dating. During a family gathering, Chris meets Tom's American fiancée, Nola Rice, and they are instantly attracted to each other. Tom's mother, Eleanor, does not approve of her son's relationship with Nola, a struggling actress, which is a source of tension in the family. Chloe encourages her father, Alec, to give Chris a job as an executive in one of his companies; he begins to be accepted into the family and marriage is discussed.",
+      };
+      
+      let movies = [movie1, movie2, movie3, movie4, movie5];
+      
+      const actor1 = {
+        name: "Will Smith",
+        age: 54,
+        numberOfFilm: 34,
+        movies: ["Seven Pounds", "I am legend", "Hancock", "I Robot", "Bad Boys"],
+        country: "USA",
+      };
+      
+      const actor2 = {
+        name: "Helena Bonham Carter",
+        age: 57,
+        numberOfFilm: 51,
+        movies: [
+          "Fight club",
+          "Alice in Wonderland",
+          "Harry Potter and the Order of the Phoenix",
+          "Planet of the Apes",
+          "Cinderella",
+        ],
+        country: "USA",
+      };
+      
+      const actor3 = {
+        name: "Tom Hanks",
+        age: 66,
+        numberOfFilm: 80,
+        movies: ["The Green Mile", "Forrest Gump", "Toy Story", "Sully", "Elvis"],
+        country: "USA",
+      };
+      
+      const actor4 = {
+        name: "Jean Dujardin",
+        age: 50,
+        numberOfFilm: 25,
+        movies: [
+          "Brice de Nice",
+          "La French",
+          "The Wolf Of Wall Street",
+          "Möbius",
+          "OSS 117: Le Caire Nid d'espion",
+        ],
+        country: "France",
+      };
+      
+      const actor5 = {
+        name: "Charlize Theron",
+        age: 47,
+        numberOfFilm: 56,
+        movies: [
+          "Prometheus",
+          "Mad Max: Fury Road",
+          "Hancock",
+          "Monster",
+          "Atomic Blonde",
+          "The Fate of the Furious",
+        ],
+        country: "USA",
+      };
+      
+      const actors = [actor1, actor2, actor3, actor4, actor5];
+      
+      const cinema = {
+        movies,
+        actors,
+      };</p>
+    </div>
+      <div class="quizzContainer">
+        <div class="question" id="question1">
+          1\ Dans quel 'movie' Jason Bateman a-t-il joué ?<br />
+          <span class="reponse" id="reponse1"></span>
+        </div>
+        <div class="question" id="question2">
+          2\ Quels 'movies' ont un ou des 'actors' en commun et quels 'actors' partagent le même 'movie' ?<br />
+          <span class="reponse" id="reponse2"></span>
+        </div>
+        <div class="question" id="question3">
+          3\ Donne la somme des âges qu'avaient actor1 et actor3 en lors de
+          l'année de sortie de movie3. <br />
+          <span class="reponse" id="reponse3"></span>
+        </div>
+        <div class="question" id="question4">
+          4\ Donne la liste des 'actors' de 'country' USA de moins de 55 ans.
+          <br />
+          <span class="reponse" id="reponse4"></span>
+        </div>
+        <div class="question" id="question5">
+          5\ Quels sont les titres, les box-offices ainsi que les synopsis des
+          'movies' dans lesquels Helena Bonham Carter et Tom Hanks ont joué ?
+          <br />
+          <span class="reponse" id="reponse5"></span>
+        </div>
+        <div class="question" id="question6">
+          6\ Convertis en € les revenus au box-office de chaque 'movie'. <br />
+          <span class="reponse" id="reponse6"></span>
+        </div>
+        <div class="question" id="question7">
+          7\ Donne la liste des 'actors' classés par leurs nombres de films dans
+          l'ordre décroissant. <br />
+          <span class="reponse" id="reponse7"></span>
+        </div>
+        <div class="question" id="question8">
+          8\ Ajoute ton film préféré à la liste 'movies'. <br>
+          <span class="reponse" id="reponse8"></span>
+        </div>
+        <div class="question" id="question9">
+          9\ Quel 'actor' a joué dans 'Toy Story' ? Donne son nom. <br>
+          <span class="reponse" id="reponse9"></span>
+        </div>
+        <div class="question" id="question10">
+          10\ Affiche dans la console ou dans le DOM, la phrase :
+          "(nom du 'movie') est un film de (genre 1, 2 ou 3 du 'movie') sorti en (année du 'movie'),
+          réalisé par (réalisateur du 'movie') et interprété par (acteur 1 du 'movie'),  (acteur 2 du 'movie') et (acteur 3 du 'movie'), il a engrangé (box-office du 'movie') au box-office.
+          Synopsis : (synopsis du 'movie'). <br> 
+          <span class="reponse" id="reponse10"></span>
+        </div>
+      </div>
+    </div>
+
+    <script src="quizzCinema.js"></script>
+  </body>
+</html>
